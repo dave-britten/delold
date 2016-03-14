@@ -8,12 +8,12 @@ delold was originally written to clean up periodic photos taken by my home secur
 
 ## Usage
 
-delold <days> <path> [-r|-e] [-c] [-t]
+    delold <days> <path> [-r|-e] [-c] [-t]
 
 Options:
 
-* <days> (Required) - Minimum age of file to delete, in whole days. Specifying 0 will delete everything.
-* <path> (Required) - Path of directory to clean out.
+* &lt;days&gt; (Required) - Minimum age of file to delete, in whole days. Specifying 0 will delete everything.
+* &lt;path&gt; (Required) - Path of directory to clean out.
 * -r - Recurse into subdirectories underneath <path> when finding and deleting files.
 * -e - When recursing into subdirectories, also delete any empty subdirectories encountered after file deletion. The directory specified by <path> will not be deleted, even if empty. Note that all empty subdirectories will be deleted, irrespective of the value specified for <days>. Use of the -e option implies -r. 
 * -c - Normally, delold will look at file modification times to calculate age. Specifying -c will use creation times instead.
