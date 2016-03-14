@@ -14,8 +14,8 @@ Options:
 
 * &lt;days&gt; (Required) - Minimum age of file to delete, in whole days. Specifying 0 will delete everything.
 * &lt;path&gt; (Required) - Path of directory to clean out.
-* -r - Recurse into subdirectories underneath <path> when finding and deleting files.
-* -e - When recursing into subdirectories, also delete any empty subdirectories encountered after file deletion. The directory specified by <path> will not be deleted, even if empty. Note that all empty subdirectories will be deleted, irrespective of the value specified for <days>. Use of the -e option implies -r. 
+* -r - Recurse into subdirectories underneath &lt;path&gt; when finding and deleting files.
+* -e - When recursing into subdirectories, also delete any empty subdirectories encountered after file deletion. The directory specified by &lt;path&gt; will not be deleted, even if empty. Note that all empty subdirectories will be deleted, irrespective of the value specified for &lt;days&gt;. Use of the -e option implies -r. 
 * -c - Normally, delold will look at file modification times to calculate age. Specifying -c will use creation times instead.
 * -t - Test mode. A list of files to be deleted will be printed, but no files will actually be deleted. Note that you may not see as many empty subdirectories being deleted when specifying the -e option, as no files are being removed first.
 
